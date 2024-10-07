@@ -1,0 +1,96 @@
+html {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+@font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("assets/fonts/nunito-v16-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+	font-family: 'Bubblegum Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: local(""), url("assets/fonts/BubblegumSans-Regular.ttf");
+}
+
+#app {
+    height: 100vh;
+    text-align: center;
+}
+
+#video-player {
+	width: 100vw;
+	height: 100vh;
+	object-fit: contain;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+    transition: opacity 2s;
+}
+
+#information {
+	position: absolute;
+	right: 4rem;
+	bottom: 2rem;
+	text-shadow: 2px 2px 4px black;
+	text-align: right;
+    margin-bottom: 0.5rem;
+}
+
+#title {
+	font-size: 4rem;
+	font-family: 'Bubblegum Sans';
+}
+
+.fadeout {
+	animation: 5s ease 0s normal forwards 1 fadeout;
+}
+
+@keyframes fadeout {
+	0% {
+		opacity: 1;
+	}
+	66% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.fw-lighter {
+    font-weight: 300;
+}
+
+.fs-6 {
+    font-size: 0.875rem;
+}
+
+.me-1 {
+    margin-right: 0.25rem;
+}
+
+.bolder {
+    font-weight: 700;
+}
+
+.fs-4 {
+    font-size: 1.5rem;
+}

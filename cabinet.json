@@ -1,0 +1,7 @@
+{
+	"mame": "/Users/matthew/Projects/cabinet/mame",
+	"romset": [ 
+		"galaga", 
+		"mspacman"
+	]
+}
